@@ -1,0 +1,21 @@
+*{
+ font-family: Metropolis;
+}
+
+.ImgProfileLife{
+    border-radius: 100%;
+    width: 65px;
+    height: 65px;
+}
+
+.ImgProfileRight{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.garisHorizontal{
+    border-left: 1px black solid;
+    height: 170px;
+    width: 0px;
+}
