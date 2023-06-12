@@ -40,6 +40,13 @@
     height: 20px !important;
 }
 
+.ItemCategory{
+    width: 10rem !important;
+}
+
+.imgItem{
+    height: 10rem !important;
+}
 /* .MenuIcon{
     display: none;
     visibility: hidden;

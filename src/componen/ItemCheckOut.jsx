@@ -3,7 +3,7 @@ import React from 'react'
 function ItemCheckOut() {
   return (
     <>
-      <div className="card w-75 mb-2" style={{ cursor: "pointer" }}>
+      <div className="card mb-2 ItemCheckOut" style={{ cursor: "pointer", width: "75%" }}>
         <div className="card-body d-flex flex-row justify-content-between align-items-center">
           <div className="d-flex flex-row">
             <div>
@@ -21,7 +21,7 @@ function ItemCheckOut() {
           </div>
 
           <div>
-            <div className="ms-5 end-2">$ 40.0</div>
+            <div className=" end-2">$ 40.0</div>
           </div>
         </div>
       </div>

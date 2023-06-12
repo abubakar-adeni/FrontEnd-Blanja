@@ -3,65 +3,31 @@ import { Link } from "react-router-dom";
 
 import "../style/Profile.css";
 
-import Navbar from "../componen/NavbarPage";
-
-import { HiPencil } from "react-icons/hi";
-import { BiMap } from "react-icons/bi";
-import { BsFillClipboard2Fill } from "react-icons/bs";
-import { VscAccount } from "react-icons/vsc";
+import Navbar from "../componen/Navbar";
+import MenuLifeProfile from "../componen/MenuLifeProfile";
 
 
 function Profile() {
   return (
     <div className="" style={{ backgroundColor: "#eeeeee" }}>
+     
       {/* Navbar */}
       <Navbar />
-      <div className="container-fluide d-flex">
+      
+      <div className="container-fluide d-flex ProfileBg">
+       
         {/* control Profile lift */}
-        <div className="bg-light" style={{ width: "25%", height: "37rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" }}>
-          <div className="d-flex ">
-            <img src="../images/fotoProfile.png" className="ImgProfileLife ms-5 mt-5" alt="Foto PRofile" />
-            <div className="ms-3 mt-5 ">
-              <p className="lh-1 mt-2 fw-bold">Nama Profile</p>
-
-              <p className="text-muted lh-1" style={{ cursor: "pointer" }}>
-                {" "}
-                <HiPencil /> Ubah Profile
-              </p>
-            </div>
-          </div>
-
-          <div className="ms-5 mt-5 d-flex flex-column">
-            <Link to="#" className="mt-3 text-dark" style={{ cursor: "pointer", textDecoration: "none" }}>
-              <label className="bg-primary rounded-circle text-center mx-3" style={{ width: "29px", height: "29px", cursor: "pointer" }}>
-                <VscAccount className=" text-light" />
-              </label>
-              My account
-            </Link>
-            <Link to="/ProfileSippingAddress" className="mt-2 text-muted" style={{ cursor: "pointer", textDecoration: "none" }}>
-              <label className=" rounded-circle text-center mx-3" style={{ width: "29px", height: "29px", backgroundColor: "#fd7e14", cursor: "pointer" }}>
-                <BiMap className=" text-light" />
-              </label>
-              Shipping Adrress
-            </Link>
-            <Link to="/ProfileMyOrder" className="mt-2 text-muted" style={{ cursor: "pointer", textDecoration: "none" }}>
-              <label className="bg-danger rounded-circle text-center mx-3" style={{ width: "29px", height: "29px", cursor: "pointer" }}>
-                <BsFillClipboard2Fill className=" text-light " />
-              </label>
-              My order
-            </Link>
-          </div>
-        </div>
+          <MenuLifeProfile/>
 
         {/* Control Profile right */}
-        <div className="bg-light m-5" style={{ width: "100%", height: "100%", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" }}>
+        <div className="bg-light m-5 ProfileBgRight" style={{ width: "100%", height: "100%", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" }}>
           <div className="p-3">
             <h5>My Profile</h5>
 
             <p className="text-muted">Manage your profile information</p>
             <hr />
 
-            <div className="d-flex justify-content-evenly">
+            <div className="d-flex justify-content-evenly ProfileBgRightTotal">
               {/* content right */}
               <div>
                 <form>

@@ -1,9 +1,10 @@
 import "../style/Kategori.css";
 
-import Navbar from "../componen/NavbarPage"
+import Navbar from "../componen/Navbar";
 import ContentCategory from "../componen/ContentCategory";
 
 function App() {
+
   return (
     <div className="App">
       {/* start navbar */}
@@ -18,7 +19,16 @@ function App() {
 
         <h2 className="mt-3 mb-3 text-start">T-shirt</h2>
 
-        <div className="d-flex">
+        <div className="d-flex row">
+          <div className="row">
+            {resipesList.map((item) => (
+              <ContentCategory title={item?.title} image={item.productpictures} id={item?.id} />
+            ))}
+          </div>
+          <ContentCategory />
+          <ContentCategory />
+          <ContentCategory />
+          <ContentCategory />
           <ContentCategory />
         </div>
       </div>

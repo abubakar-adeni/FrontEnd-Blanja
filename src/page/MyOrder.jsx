@@ -1,17 +1,17 @@
 import React from 'react'
 import "../style/MyOrder.css"
-import Navbar from "../componen/NavbarPage";
+import Navbar from "../componen/Navbar";
 import ItemMyOrder from "../componen/ItemMyOrder";
 
 function MyOrder() {
     return (
       <div className="">
         {/* Start Navbar */}
-        <Navbar />
+        <Navbar/>
         {/* End Navbar */}
 
         {/* Content */}
-        <div className="container d-flex flex-row justify-content-between">
+        <div className="container d-flex flex-row justify-content-between" style={{marginTop: "5rem"}}>
           <div className=" container">
             <h1 className="text-start mt-3">My bag</h1>
 
