@@ -1,33 +1,33 @@
-div{
- font-family: Metropolis;
+div {
+  font-family: Metropolis;
 }
 
-.contentCheckOut{
-    height: 90px;
-    width: 90%;
-    border-radius: 5px;
+.contentCheckOut {
+  height: 80px;
+  width: 100%;
+  border-radius: 5px;
 }
 
-.BtnCheckOut{
-    border-radius: 25px;
-    width: 100%;
-    height: 25px;
-    font-size: 11px;
+.BtnCheckOut {
+  border-radius: 25px;
+  width: 100%;
+  height: 25px;
+  font-size: 11px;
 }
 
-.cardCost{
- height: 100%;
- width: 40%;
+.cardCost {
+  height: 100%;
+  width: 40%;
 }
 
 @media only screen and (max-width: 600px) {
-    .CheckOutHp{
+  .CheckOutHp {
     display: flex;
-    flex-direction: column!important;
+    flex-direction: column !important;
     flex-wrap: wrap;
-    }
+  }
 
-    .ItemCheckOut{
-        width: 100% !important
-    }
+  .ItemCheckOut {
+    width: 100% !important;
+  }
 }

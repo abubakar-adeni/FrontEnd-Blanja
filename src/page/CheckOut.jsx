@@ -32,7 +32,7 @@ function CheckOut() {
 
                 {/* content buy item */}
                 <ItemCheckOut />
-                <ItemCheckOut />
+                
               </div>
 
               <div className="card cardCost">

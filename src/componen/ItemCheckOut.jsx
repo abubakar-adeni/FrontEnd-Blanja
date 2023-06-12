@@ -21,7 +21,7 @@ function ItemCheckOut() {
           </div>
 
           <div>
-            <div className=" end-2">$ 40.0</div>
+            <div className=" end-2" style={{width: "50px"}}>$ 40.0</div>
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ function ProfileSippingAddress() {
           <MenuLifeProfile />
 
           {/* Control Profile right */}
-          <div className="bg-light m-5 ProfileBgRight" style={{ width: "100%", height: "100%", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" }}>
+          <div className="bg-light mx-5 ProfileBgRight" style={{ width: "100%", height: "100%", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)", marginTop: "6rem" }}>
             <div className="p-3">
               <h5>Choose another address</h5>
 
@@ -81,7 +81,7 @@ function ProfileSippingAddress() {
                           </div>
                           <div class="row mb-3">
                             <label for="recipient-name" class="col-form-label">
-                              Postal code
+                              City or Subdistrict
                             </label>
                             <div class="col">
                               <input type="text" class="form-control" aria-label="First name" />
@@ -107,7 +107,7 @@ function ProfileSippingAddress() {
                 {/* end modal Add Address */}
 
                 {/* content bottom */}
-                <div className="d-flex flex-column mt-4 pb-5">
+                <div className="d-flex flex-column mt-4 pb-3">
                   <span class="border border-danger p-4 rounded-2">
                     <h6 className="fw-bold">Address Jane</h6>
                     <p>Perumahan Sapphire Mediterania, Wiradadi, Kec. Sokaraja, Kabupaten Banyumas, Jawa Tengah, 53181 [Tokopedia Note: blok c 16] Sokaraja, Kab. Banyumas, 53181</p>

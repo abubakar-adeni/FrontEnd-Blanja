@@ -10,13 +10,13 @@ function MenuLifeProfile() {
     
     return (
       <>
-        <div className="bg-light ProfileBgLift" style={{ marginTop: "5rem", width: "25%", height: "37rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" }}>
+        <div className="bg-light ProfileBgLift" style={{ marginTop: "4rem", width: "25%", height: "37rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" }}>
           <div className="d-flex MenuFotoLife">
             <img src="../images/fotoProfile.png" className="ImgProfileLife ms-5 mt-5" alt="Foto PRofile" />
             <div className="ms-3 mt-5 NameProfileLife">
               <p className="lh-1 mt-2 fw-bold ">Nama Profile</p>
 
-              <p className="text-muted lh-1" style={{ cursor: "pointer" }}>
+              <p className="text-muted lh-1 me-2" style={{ cursor: "pointer", fontSize: "14px" }}>
                 {" "}
                 <HiPencil /> Ubah Profile
               </p>
