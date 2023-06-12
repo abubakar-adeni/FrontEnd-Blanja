@@ -15,20 +15,7 @@ const [ContentList, setContentList] = React.useState([]);
      .catch((err) => {
        console.log("error :", err);
      });
-
-  //  axios
-  //    .get("https://api.publicapis.org/entries")
-  //    .then((response) => console.log("data api :", response))
-  //    .catch((err) => {
-  //      console.log("error :", err);
-  //    });
  }, []);
-
- 
-
- 
-
-
 
   return (
     <div className="App">
@@ -47,14 +34,9 @@ const [ContentList, setContentList] = React.useState([]);
         <div className="d-flex row">
           <div className="row">
             {ContentList.map((item) => (
-              <ContentCategory title={item?.title} price={item?.price} storename={item?.storename} image={item.productpictures}  id={item?.id} />
+              <ContentCategory title={item?.title} price={item?.price} storename={item?.storename} image={item.productpictures} id={item?.id} />
             ))}
           </div>
-          {/* <ContentCategory />
-          <ContentCategory />
-          <ContentCategory />
-          <ContentCategory />
-          <ContentCategory /> */}
         </div>
       </div>
     </div>
