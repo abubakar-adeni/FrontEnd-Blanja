@@ -34,7 +34,7 @@ const router = createBrowserRouter([
     element: <Profile />,
   },
   {
-    path: "/Kategori",
+    path: "/Kategori/:category",
     element: <Kategori />,
   },
   {

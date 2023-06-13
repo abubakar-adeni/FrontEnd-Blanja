@@ -128,7 +128,7 @@ function App() {
           <h2 className="metropolis-b">Popular</h2>
           <span>Find clothes that are trending recently</span>
           <div className="row g-4 align-items-stretch">
-            {listNewProduct.map((item) => {
+            {listPopular.map((item) => {
               return (
                 <ContentCategory
                   title={item.title}
