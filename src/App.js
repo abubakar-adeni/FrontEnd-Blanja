@@ -11,6 +11,7 @@ import Kategori from "./pages/Kategori"
 import CheckOut from "./pages/CheckOut"
 import MyOrder from "./pages/MyOrder"
 import Profile from "./pages/Profile"
+import Product from "./pages/Product";
 import ProfileSippingAddress from "./pages/ProfileSippingAddress"
 import ProfileMyOrder from "./pages/ProfileMyOrder"
 
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
   {
     path: "/ProfileMyOrder",
     element: <ProfileMyOrder />,
+  },
+  {
+    path: "/product",
+    element: <Product />,
   },
 ])
 
