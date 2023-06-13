@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 function ContentCategory(props) {
   const {
@@ -13,9 +14,10 @@ function ContentCategory(props) {
   } = props
   return (
     <>
-      <div
-        className="card mb-3 me-3 ItemCategory"
+      <Link
+        className="card mb-3 me-3 ItemCategory text-decoration-none"
         style={{ width: "15rem", cursor: "pointer" }}
+        to={`/Detail-Produk/${id}`}
       >
         <img
           src={`${productpictures}`}
@@ -27,7 +29,7 @@ function ContentCategory(props) {
         <h5 className="card-title text-start ms-3">{title}</h5>
         <p className="card-text text-danger text-start ms-3">{price}</p>
         <p className="text-muted text-start ms-3">{storename}</p>
-      </div>
+      </Link>
     </>
   )
 }

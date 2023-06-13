@@ -15,6 +15,7 @@ import ProfileSippingAddress from "./pages/ProfileSippingAddress"
 import ProfileMyOrder from "./pages/ProfileMyOrder"
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import axios from "axios"
 
 const router = createBrowserRouter([
   {
@@ -60,6 +61,19 @@ const router = createBrowserRouter([
 ])
 
 function App() {
+  axios.interceptors.request.use(
+    (config) => {
+      if (localStorage.getItem("token")) {
+        config.headers["Authorization"] = `Bearer ${localStorage.getItem(
+          "token"
+        )}`
+      }
+      return config
+    },
+    (error) => {
+      Promise.reject(error)
+    }
+  )
   return (
     <div className="App">
       <RouterProvider router={router} />

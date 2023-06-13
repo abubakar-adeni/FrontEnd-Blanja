@@ -11,8 +11,6 @@ function App() {
   const category = location?.pathname?.split("/")[2]
   const [ContentList, setContentList] = React.useState([])
 
-  console.log(category)
-
   React.useEffect(() => {
     axios
       .get(

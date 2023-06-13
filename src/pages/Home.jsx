@@ -119,6 +119,7 @@ function App() {
                   price={item.price}
                   storename={item.storename}
                   productpictures={item.productpictures}
+                  id={item.id}
                 />
               )
             })}
@@ -135,6 +136,7 @@ function App() {
                   price={item.price}
                   storename={item.storename}
                   productpictures={item.productpictures}
+                  id={item.id}
                 />
               )
             })}
