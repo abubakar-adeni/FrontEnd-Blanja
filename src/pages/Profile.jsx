@@ -1,26 +1,32 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
-import "../style/Profile.css";
+import "../style/Profile.css"
 
-import Navbar from "../componen/Navbar";
-import MenuLifeProfile from "../componen/MenuLifeProfile";
-
+import Navbar from "../component/Navbar"
+import MenuLifeProfile from "../component/MenuLifeProfile"
 
 function Profile() {
   return (
     <div className="" style={{ backgroundColor: "#eeeeee" }}>
-     
       {/* Navbar */}
-      <Navbar style={{zIndex:100, BackgroundColor:"white"}}/>
-      
+      <Navbar style={{ zIndex: 100, BackgroundColor: "white" }} />
+
       <div className="container-fluide d-flex ProfileBg">
-       
         {/* control Profile lift */}
-          <MenuLifeProfile/>
+        <MenuLifeProfile />
 
         {/* Control Profile right */}
-        <div className="bg-light mx-5 ProfileBgRight" style={{ width: "100%", height: "100%", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)", marginTop: "6rem"}}>
+        <div
+          className="bg-light mx-5 ProfileBgRight"
+          style={{
+            width: "100%",
+            height: "100%",
+            boxShadow:
+              "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+            marginTop: "6rem",
+          }}
+        >
           <div className="p-3">
             <h5>My Profile</h5>
 
@@ -32,7 +38,10 @@ function Profile() {
               <div>
                 <form>
                   <div class="row mb-3">
-                    <label for="name" class="col-sm-2 col-form-label text-muted">
+                    <label
+                      for="name"
+                      class="col-sm-2 col-form-label text-muted"
+                    >
                       Name
                     </label>
                     <div class="col-sm-10">
@@ -40,33 +49,67 @@ function Profile() {
                     </div>
                   </div>
                   <div class="row mb-3">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label text-muted">
+                    <label
+                      for="inputEmail3"
+                      class="col-sm-2 col-form-label text-muted"
+                    >
                       Email
                     </label>
                     <div class="col-sm-10">
-                      <input type="email" class="form-control" id="inputEmail3" />
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="inputEmail3"
+                      />
                     </div>
                   </div>
                   <div class="row mb-3">
-                    <label for="PhoneNumber" class="col-sm-2 col-form-label text-muted">
+                    <label
+                      for="PhoneNumber"
+                      class="col-sm-2 col-form-label text-muted"
+                    >
                       Phone Number
                     </label>
                     <div class="col-sm-10">
-                      <input type="number" class="form-control" id="PhoneNumber" />
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="PhoneNumber"
+                      />
                     </div>
                   </div>
                   <fieldset class="row mb-3">
-                    <legend class="col-form-label col-sm-2 pt-0 text-muted">Gender</legend>
+                    <legend class="col-form-label col-sm-2 pt-0 text-muted">
+                      Gender
+                    </legend>
                     <div class="col-sm-10">
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Laki-laki" />
-                        <label class="form-check-label text-muted" for="inlineRadio1">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="inlineRadio1"
+                          value="Laki-laki"
+                        />
+                        <label
+                          class="form-check-label text-muted"
+                          for="inlineRadio1"
+                        >
                           Laki-laki
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Perempuan" />
-                        <label class="form-check-label text-muted" for="inlineRadio2">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="inlineRadio2"
+                          value="Perempuan"
+                        />
+                        <label
+                          class="form-check-label text-muted"
+                          for="inlineRadio2"
+                        >
                           Perempuan
                         </label>
                       </div>
@@ -74,15 +117,27 @@ function Profile() {
                   </fieldset>
 
                   <div class="row mb-3">
-                    <label for="Date" class="col-sm-2 col-form-label text-muted">
+                    <label
+                      for="Date"
+                      class="col-sm-2 col-form-label text-muted"
+                    >
                       Date
                     </label>
                     <div class="col-sm-10">
-                      <input type="date" id="date" name="date" className="text-muted rounded " />
+                      <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        className="text-muted rounded "
+                      />
                     </div>
                   </div>
 
-                  <button type="submit" class="btn btn-danger" style={{ borderRadius: "10px", width: "38%" }}>
+                  <button
+                    type="submit"
+                    class="btn btn-danger"
+                    style={{ borderRadius: "10px", width: "38%" }}
+                  >
                     Save
                   </button>
                 </form>
@@ -93,7 +148,11 @@ function Profile() {
 
               {/* content Right */}
               <div className="d-flex flex-column ">
-                <img src="../images/fotoProfile.png" className="ImgProfileRight mb-3" alt="Foto Profile" />
+                <img
+                  src="../images/fotoProfile.png"
+                  className="ImgProfileRight mb-3"
+                  alt="Foto Profile"
+                />
                 <button type="button" class="btn btn-outline-secondary">
                   Select image
                 </button>
@@ -103,7 +162,7 @@ function Profile() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Profile;
+export default Profile
