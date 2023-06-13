@@ -1,17 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg"
+import "./App.css"
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.min.js"
 
-import Kategori from "./page/Kategori"
-import CheckOut from './page/CheckOut';
-import MyOrder from "./page/MyOrder";
-import Profile from "./page/Profile"
-import ProfileSippingAddress from "./page/ProfileSippingAddress";
-import ProfileMyOrder from "./page/ProfileMyOrder";
+import Home from "./pages/Home"
+import Login from "./pages/Login"
+import Register from "./pages/Register"
+import Kategori from "./pages/Kategori"
+import CheckOut from "./pages/CheckOut"
+import MyOrder from "./pages/MyOrder"
+import Profile from "./pages/Profile"
+import ProfileSippingAddress from "./pages/ProfileSippingAddress"
+import ProfileMyOrder from "./pages/ProfileMyOrder"
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import axios from "axios"
 
 const router = createBrowserRouter([
   {
@@ -31,7 +35,7 @@ const router = createBrowserRouter([
     element: <Profile />,
   },
   {
-    path: "/Kategori",
+    path: "/Kategori/:category",
     element: <Kategori />,
   },
   {
@@ -54,14 +58,27 @@ const router = createBrowserRouter([
     path: "/ProfileMyOrder",
     element: <ProfileMyOrder />,
   },
-]);
+])
 
 function App() {
+  axios.interceptors.request.use(
+    (config) => {
+      if (localStorage.getItem("token")) {
+        config.headers["Authorization"] = `Bearer ${localStorage.getItem(
+          "token"
+        )}`
+      }
+      return config
+    },
+    (error) => {
+      Promise.reject(error)
+    }
+  )
   return (
     <div className="App">
       <RouterProvider router={router} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

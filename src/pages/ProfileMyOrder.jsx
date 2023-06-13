@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import "../style/ProfileMyOrder.css";
 
-import Navbar from "../componen/Navbar";
-import MenuLifeProfile from "../componen/MenuLifeProfile";
+import Navbar from "../component/Navbar";
+import MenuLifeProfile from "../component/MenuLifeProfile";
 
 function ProfileMyOrder() {
     return (
